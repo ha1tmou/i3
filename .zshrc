@@ -18,7 +18,6 @@ source $ZSH/oh-my-zsh.sh
 #
 # ALIASES
 alias nf="neofetch"
-alias vim="nvim"
 alias opn="xdg-open"
 alias tt="tree"
 alias sysr="reboot"
