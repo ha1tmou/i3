@@ -108,7 +108,7 @@ bindsym XF86AudioPrev exec playerctl previous
 # END MULTIMEDIA KEYS
 #
 # APP SHORTCUTS
-bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+Return exec alacritty
 bindsym $mod+w exec /usr/bin/firefox-developer-edition
 bindsym $mod+n exec /usr/bin/thunar
 bindsym Print exec scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
@@ -129,12 +129,10 @@ set $ws9 "9"
 set $ws10 "10"
 # bind program to workspace and focus it on startup
 assign [class="(?i)firefox"] $ws1
-assign [class="Xfce4-terminal"] $ws2
+assign [class="Alacritty"] $ws2
 assign [class="Thunar"] $ws3
 # automatically set focus for new window if it opens on another workspace than the current
-#for_window [class=Xfce4-terminal] focus
-#for_window [class=(?i)firefox] focus
-#for_window [class=Thunar] focus
+for_window [class=Alacritty] focus
 # END WORKSPACE BEHAVIOUR
 #
 # AUTOSTART APPLICARIONS/SERVICES ON LOGIN
