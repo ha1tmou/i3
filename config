@@ -125,9 +125,10 @@ set $ws10 "10"
 # Bind program to workspace and focus it on startup
 assign [class="(?i)firefox"] $ws1
 assign [class="Alacritty"] $ws2
+assign [class="Code"] $ws3
 assign [class="Thunar"] $ws4
 # Automatically set focus for new window if it opens on another workspace than the current
-for_window [class=Alacritty] focus
+#for_window [class=Alacritty] focus
 
 # [[ Autostart Applicarions/Services On Login ]]
 #exec --no-startup-id sleep 17 && xfce4-terminal
