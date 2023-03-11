@@ -128,15 +128,15 @@ assign [class="Alacritty"] $ws2
 assign [class="Code"] $ws3
 assign [class="Thunar"] $ws4
 # Automatically set focus for new window if it opens on another workspace than the current
-#for_window [class=Alacritty] focus
+# for_window [class=Alacritty] focus
 
 # [[ Autostart Applicarions/Services On Login ]]
-#exec --no-startup-id sleep 17 && xfce4-terminal
+# exec --no-startup-id sleep 17 && xfce4-terminal
 # Get auth work with polkit-gnome
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id dex --autostart --environment i3
 # Configure multiple keyboard layouts and hotkey to switch (Alt+CAPSLOCK in this example)
-#exec --no-startup-id setxkbmap -layout 'us,sk' -variant altgr-intl,qwerty -option 'grp:alt_caps_toggle'
+# exec --no-startup-id setxkbmap -layout 'us,sk' -variant altgr-intl,qwerty -option 'grp:alt_caps_toggle'
 # Use arandr to setup displays and save the file as monitor
 exec --no-startup-id ~/.screenlayout/monitor.sh
 # Set wallpaper
@@ -148,11 +148,11 @@ exec --no-startup-id dbus-launch dunst --config ~/.config/dunst/dunstrc
 
 # [[ System Tray ]]
 # Start blueberry app for managing bluetooth devices from tray
-#exec --no-startup-id blueberry-tray
+# exec --no-startup-id blueberry-tray
 # Networkmanager-applet
 exec --no-startup-id nm-applet
 # Clipman-applet
-#exec --no-startup-id xfce4-clipman
+# exec --no-startup-id xfce4-clipman
 
 # [[ Floating Rules ]]
 # Set floating (nontiling) for apps needing it
@@ -188,40 +188,40 @@ set $dark           #1c1b22
 set $urgentorange   #df7861
 # Windows colors
 #class                      border          bground         text        indicator       child_border
-client.focused		    $lightblue	    $darkblue	    $white	$mediumgrey	    $mediumgrey
-client.unfocused	    $darkblue	    $darkblue	    $lightgrey	$darkgrey	    $darkgrey
+client.focused		        $lightblue	    $darkblue	    $white	    $mediumgrey	    $mediumgrey
+client.unfocused	        $darkblue	    $darkblue	    $lightgrey	$darkgrey	    $darkgrey
 client.focused_inactive	    $darkblue	    $darkblue	    $lightgrey	$black		    $black
-client.urgent		    $urgentorange   $urgentorange   $white	$urgentorange	$urgentorange
+client.urgent		        $urgentorange   $urgentorange   $white	    $urgentorange	$urgentorange
 
 # [[ Bar Settings ]]
 bar {
     status_command i3blocks -c ~/.config/i3/i3blocks.conf
 position top
     # Tray icons size
-	tray_padding 3
+    tray_padding 3
     # Remove workspace numbers
     strip_workspace_numbers yes
-	colors {
-		    background          $dark
-		    statusline          $white
-#		    class               border 		        bg		txt	    indicator
-		    focused_workspace   $dark	   	        $dark	        $white	    $purple
-		    active_workspace	$dark      	        $dark           $white	    $purple
-		    urgent_workspace	$urgentorange    	$urgentorange	$dark	    $purple
-	}
+    colors {
+            background          $dark
+            statusline          $white
+#		    class               border 		        bg		        txt	        indicator
+            focused_workspace   $dark	   	        $dark	        $white	    $purple
+            active_workspace	$dark      	        $dark           $white	    $purple
+            urgent_workspace	$urgentorange    	$urgentorange	$dark	    $purple
+    }
 }
 
 # [[ Application Menu ]]
 bindsym $mod+d exec rofi -modi drun -show drun \
-		-config ~/.config/rofi/rofidmenu.rasi
-#bindsym F9 exec rofi -modi drun -show drun \
-#-config ~/.config/rofi/rofidmenu.rasi
+        -config ~/.config/rofi/rofidmenu.rasi
+# bindsym F9 exec rofi -modi drun -show drun \
+# -config ~/.config/rofi/rofidmenu.rasi
 # Rofi bindings for window menu ($mod+t /F10 optional disabled)
 bindsym $mod+t exec rofi -show window \
-		-config ~/.config/rofi/rofidmenu.rasi
-#bindsym F10 exec rofi -show window \
-#-config ~/.config/rofi/rofidmenu.rasi
+        -config ~/.config/rofi/rofidmenu.rasi
+# bindsym F10 exec rofi -show window \
+# -config ~/.config/rofi/rofidmenu.rasi
 # Manage clipboard (install rofi-greenclip from the AUR)
-#exec --no-startup-id greenclip daemon>/dev/null
-#bindsym $mod+c exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard \
-#-config ~/.config/rofi/rofidmenu.rasi
+# exec --no-startup-id greenclip daemon>/dev/null
+# bindsym $mod+c exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard \
+# -config ~/.config/rofi/rofidmenu.rasi
