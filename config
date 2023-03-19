@@ -135,8 +135,8 @@ assign [class="Thunar"] $ws4
 # Get auth work with polkit-gnome
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id dex --autostart --environment i3
-# Configure multiple keyboard layouts and hotkey to switch (Alt+CAPSLOCK in this example)
-# exec --no-startup-id setxkbmap -layout 'us,sk' -variant altgr-intl,qwerty -option 'grp:alt_caps_toggle'
+# Configure multiple keyboard layouts and hotkey to switch (Alt+CAPSLOCK)
+exec --no-startup-id setxkbmap -layout 'us,fr' -option 'grp:alt_caps_toggle'
 # Use arandr to setup displays and save the file as monitor
 exec --no-startup-id ~/.screenlayout/monitor.sh
 # Set wallpaper
