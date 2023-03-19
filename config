@@ -56,8 +56,8 @@ bindsym $mod+Shift+c reload
 # Restart i3 inplace
 bindsym $mod+Shift+r restart
 # Backlight control
-bindsym F2 exec brightnessctl set 5%- 
-bindsym F3 exec brightnessctl set +5%
+bindsym F2 exec brightnessctl set 2%- 
+bindsym F3 exec brightnessctl set +2%
 # Change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
