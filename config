@@ -177,9 +177,9 @@ default_floating_border pixel 1
 # Define colors variables
 set $darkblue	    #08052b
 set $lightblue      #5294e2
-set $white	    #ffffff
-set $black	    #000000
-set $purple	    #e345ff
+set $white	        #ffffff
+set $black	        #000000
+set $purple	        #e345ff
 set $darkgrey	    #383c4a
 set $lightgrey      #b0b5bd
 set $grey           #808080
