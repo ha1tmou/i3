@@ -50,7 +50,10 @@ bindsym $mod+q kill
 # Exit menu
 bindsym $mod+Shift+e exec ~/.config/i3/scripts/powermenu
 # Lock the system
-bindsym $mod+l exec ~/.config/i3/scripts/blur-lock
+# Lock the system with a blur screen lock
+# bindsym $mod+l exec ~/.config/i3/scripts/blur-lock
+# Lock the system with a dark screen lock
+bindsym $mod+l exec i3lock -c 000000 
 # Reload the configuration file
 bindsym $mod+Shift+c reload
 # Restart i3 inplace
