@@ -154,8 +154,6 @@ exec --no-startup-id dbus-launch dunst --config ~/.config/dunst/dunstrc
 # exec --no-startup-id blueberry-tray
 # Networkmanager-applet
 exec --no-startup-id nm-applet
-# Clipman-applet
-exec --no-startup-id xfce4-clipman
 
 # [[ Floating Rules ]]
 # Set floating (nontiling) for apps needing it
