@@ -108,7 +108,7 @@ bindsym XF86AudioPrev exec playerctl previous
 
 # App Shortcuts
 bindsym $mod+Return exec alacritty
-bindsym $mod+w exec /usr/bin/firefox-developer-edition
+bindsym $mod+w exec /usr/bin/google-chrome-stable
 bindsym $mod+n exec /usr/bin/thunar
 bindsym Print exec scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
 # Power profiles menu switcher (rofi)
